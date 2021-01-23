@@ -17,7 +17,7 @@ $config = array(
     'port' => '18823' );
 
 // Initiate connection
-$verge = new Verge\RPC(
+newyorkcoin = new newyorkcoin\RPC(
     sprintf('http://%s:%s@%s:%s/',
         $config['user'],
         $config['pass'],
@@ -29,14 +29,14 @@ $verge = new Verge\RPC(
 // Set name of the account.
 $account['name'] = 'Positivism';
 
-// Generate a new verge address.
-$verge->getnewaddress($account['name']);
+// Generate a new newyorkcoin address.
+newyorkcoin->getnewaddress($account['name']);
 
 // Get account addresses
-$account['addresses'] = $verge->getaddressesbyaccount($account['name']);
+$account['addresses'] = newyorkcoin->getaddressesbyaccount($account['name']);
 
 // Get account balance.
-$account['balance'] = $verge->getbalance($account['name']);
+$account['balance'] = newyorkcoin->getbalance($account['name']);
 
 echo 'NewYorkCoin Account Name: '.$account['name'].'<br />';
 echo 'NewYorkCoin Account Balance: '.$account['balance'].'<br />';
