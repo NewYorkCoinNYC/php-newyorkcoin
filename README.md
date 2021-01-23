@@ -12,7 +12,7 @@ Requires newyorkcoind to already be installed and running on your local server o
 ## Usage:
 Create the composer autoload file with `composer dump-autoload`
 
-Example Usage (see /example.php for additional coverage):
+Example Usage (see [example.php](https://github.com/NewYorkCoinNYC/php-newyorkcoin/example.php) for additional coverage):
 ```
 // Composer Autoloader ( PSR-4 )
 require_once 'vendor/autoload.php';
